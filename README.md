@@ -101,7 +101,7 @@ def crypto(filename, cypher):
             eLine = ''
             for ch in line:
                 eLine += cypher(ch)
-            fhenc.write(eLine)
+            fhenc.write(eLine
 
 >>>crypto('myDoc.txt', lambda x: chr((ord(x)+5)%256))
 ```
